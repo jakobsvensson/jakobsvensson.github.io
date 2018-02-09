@@ -1,0 +1,40 @@
+html, body{
+  height:100%;
+    background-color: burlywood;
+        margin: 0px;
+    padding: 0px;
+}
+
+.font_properties{
+    font-family: "futura";
+}
+
+
+.paddings{
+    padding-left: 20%;
+}
+.firsttext{
+     height: 100%;
+         max-height: 1080px;
+    background-color:darkseagreen;
+    
+}
+.listtext{
+    
+    background-color:burlywood;
+    
+}
+.liten1{
+    font-size: 8pt
+}
+
+.site{
+    position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.header{
+    padding-top: 30%;
+}
