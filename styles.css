@@ -36,7 +36,8 @@ html, body{
     
 }
 .liten1{
-    font-size: 8pt
+    font-size: 9pt;
+    font-family: "adobe-garamond-pro"
 }
 
 .site{
@@ -57,7 +58,8 @@ h2{
 }
 
 p {
-    font-family: "adobe-garamond-pro"
+    font-family: "adobe-garamond-pro";
+    font-size: 12pt;
 }
 
 h3{
