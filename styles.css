@@ -17,7 +17,7 @@ html, body{
 }
 
 .font_properties{
-    font-family: "futura-pt";
+    
 }
 
 
@@ -33,6 +33,7 @@ html, body{
 .listtext{
     
     background-color:burlywood;
+    
     
 }
 .liten1{
@@ -52,10 +53,10 @@ html, body{
 }
 
 h2{
-    font-family: "futura-pt";
+    font-family: "agency-fb";
         margin: 0;
     font-size: 20pt;
-    letter-spacing: -1px;
+    //letter-spacing: -1px;
 }
 
 p {
@@ -64,6 +65,10 @@ p {
 }
 
 h3{
+    font-family: agency-fb-wide, sans-serif;
+font-weight: 700;
+font-style: normal;
+    
     display: block;
     font-size: 12pt;
     margin-top: 0;
@@ -71,6 +76,12 @@ h3{
     margin-left: 0;
     margin-right: 0;
     font-weight: bold;
+}
+
+a {
+    font-family: adobe-garamond-pro, serif;
+font-weight: 400;
+font-style: italic;
 }
 
 .footer {
@@ -84,6 +95,9 @@ h3{
 }
 
 h1 {
+    font-family: agency-fb-wide, sans-serif;
+font-weight: 900;
+font-style: normal;
     margin: 0;
     letter-spacing: -1px;
 }
@@ -116,6 +130,9 @@ h1 {
 }
 
 h4 {
+    font-family: agency-fb-wide, sans-serif;
+font-weight: 900;
+font-style: normal;
     font-size: 20pt;
     margin: 0;
 }
@@ -131,8 +148,9 @@ h4 {
     color: black;
     padding: 10px 15px;
     text-align: center;
-    font-family: "futura-pt"", sans-serif;
-    font-style: normal;
+    font-family: "agency-fb-wide", sans-serif;
+font-weight: 700;
+font-style: normal;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
