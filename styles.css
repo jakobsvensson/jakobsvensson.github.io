@@ -5,37 +5,14 @@ html, body{
     padding: 0px;
 }
 
-.test-col {
-    background-color: burlywood;
-    padding: 0;
-    margin: 0;
-}
 
-.container {
-    
-    margin: 0;
-}
-
-.font_properties{
-    
-}
-
-
-.paddings{
-    padding-left: 20%;
-}
 .firsttext{
      height: 100%;
          max-height: 1080px;
     background-color:transparent;
     
 }
-.listtext{
-    
-    background-color:burlywood;
-    
-    
-}
+
 .liten1{
     font-size: 9pt;
     font-family: "adobe-garamond-pro";
@@ -52,48 +29,6 @@ html, body{
     padding-top: 10%;
 }
 
-h2{
-    font-family: "agency-fb";
-        margin: 0;
-    font-size: 20pt;
-    //letter-spacing: -1px;
-}
-
-p {
-    font-family: "adobe-garamond-pro";
-    font-size: 12pt;
-}
-
-h3{
-    font-family: agency-fb-wide, sans-serif;
-font-weight: 700;
-font-style: normal;
-    
-    display: block;
-    font-size: 12pt;
-    margin-top: 0;
-    margin-bottom: 2px;
-    margin-left: 0;
-    margin-right: 0;
-    font-weight: bold;
-}
-
-a {
-    font-family: adobe-garamond-pro, serif;
-font-weight: 400;
-font-style: italic;
-}
-
-.footer {
-     padding-bottom: 10px;
-    font-size: 9pt;
-   
-}
-.line {
-    height: 1px;
-    background-color: darkseagreen;
-}
-
 h1 {
     font-family: interstate, sans-serif;
     text-align: center;
@@ -108,57 +43,4 @@ font-style: normal;
     z-index: 9;
 }
 
-.arrow-down {
-  width: 0; 
-  height: 0; 
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  
-  border-top: 20px solid burlywood;
-    
-    
-    position: relative;
-    
-    animation-name: example;
-    animation-duration: 5s;    
-    animation-delay: 1s;
-    animation-fill-mode: both;
-}
 
-@keyframes example {
-    from {top: 0px; background-color: transparent;}
-    to {top: 200px; background-color: transparent;}
-}
-
-.more content {
-    
-    
-}
-
-h4 {
-    font-family: agency-fb-wide, sans-serif;
-font-weight: 900;
-font-style: normal;
-    font-size: 20pt;
-    margin: 0;
-}
-
-.display-none {
-    display: none;
-}
-
-#button{
-    
-    background-color: darkseagreen; /* Green */
-    border: none;
-    color: black;
-    padding: 10px 15px;
-    text-align: center;
-    font-family: "agency-fb-wide", sans-serif;
-font-weight: 700;
-font-style: normal;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-}
-}
