@@ -1,6 +1,6 @@
 html, body{
   height:100%;
-    background-color: white;
+    background-color: burlywood;
         margin: 0px;
     padding: 0px;
 }
@@ -27,7 +27,7 @@ html, body{
 .firsttext{
      height: 100%;
          max-height: 1080px;
-    background-color:transparent;
+    background-color:darkseagreen;
     
 }
 .listtext{
@@ -38,18 +38,18 @@ html, body{
 }
 .liten1{
     font-size: 9pt;
-    font-family: "adobe-garamond-pro";
-        padding-left: 20%;
+    font-family: "adobe-garamond-pro"
 }
 
 .site{
-    margin: auto;
-    width: 50%;
-    z-index: 10;
+    position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
 .header{
-    z-index: 9;
-    padding-top: 10%;
+    padding-top: 30%;
 }
 
 h2{
@@ -96,16 +96,10 @@ font-style: italic;
 
 h1 {
     font-family: interstate, sans-serif;
-    text-align: center;
 font-weight: 900;
 font-style: normal;
-    font-size: 30pt;
     margin: 0;
     letter-spacing: -1px;
-    position: absolute;
-    top:65%;
-    padding-left: 43%;
-    z-index: 9;
 }
 
 .arrow-down {
