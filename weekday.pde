@@ -40,11 +40,11 @@ void setup (){
   smooth();
 
    art = createGraphics (550, 550);
-frameRate(1);
+frameRate(10);
 
 for (int i = 0; i < 10; i ++){
-      x = int(random(80, 630));
-      y = int(random(120, 670));
+      x = int(random(0, 550));
+      y = int(random(0, 550));
        
          numberlistX[i] = x;
          numberlistY[i] = y;
@@ -82,7 +82,7 @@ void draw (){
   text(date, 270, 90);
   fill(0, 0, 0);
   text(countdown, 350, 90);
-  text("I hope you like it. \nClick the image to enter my portfolio and see more nonsense.", 
+  text("I hope you like it. If you are impatient, click 'A'. To save the art, click 'S'. \nClick the image to enter my portfolio and see more nonsense.", 
         80, 715);
 
   fill(255, 0);
@@ -96,8 +96,8 @@ void draw (){
 
   if (timer == 0) {
       for (int i = 0; i < 10; i ++){
-      x = int(random(80, 630));
-      y = int(random(120, 670));
+      x = int(random(0, 550));
+      y = int(random(0, 550));
        
          numberlistX[i] = x;
          numberlistY[i] = y;
@@ -205,4 +205,45 @@ void shape1(int[] x, int[] y) {
 //fill(r,g,b,250);
 //bezier(x+sin(x/2)*10, y, c1, c2, c3, c4, x2+sin(x2/2)*10, y2+cos(y2/2)*10);
   
+}
+
+void keyPressed() {
+    if ((key == 's') || (key == 'S')) {
+     
+      art.save("my_art.png");
+} 
+  
+      if ((key == 'a') || (key == 'A')) {
+     
+
+        for (int i = 0; i < 10; i ++){
+      x = int(random(0, 550));
+      y = int(random(0, 550));
+       
+         numberlistX[i] = x;
+         numberlistY[i] = y;
+         
+          r = random(0,40);
+          g = random(50,160);
+          b = random(0,120);
+          
+          r2 = random(0,40);
+          g2 = random(50,160);
+          b2 = random(0,120);
+          
+          r3 = random(0,40);
+          g3 = random(50,160);
+          b3 = random(0,120);
+          
+          r4 = random(0,230);
+          g4 = random(20,230);
+          b4 = random(0,240);
+
+          r5 = random(0,230);
+          g5 = random(20,230);
+          b5 = random(0,240);
+          
+          numberOfPoints = int(random(3, 10));
+        }
+}
 }
