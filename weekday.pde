@@ -86,7 +86,7 @@ void draw (){
   text(date, 270, 90);
   fill(0, 0, 0);
   text(countdown, 350, 90);
-  text("I hope you like it. If you are impatient, click here. \nClick the image to enter my portfolio and see more nonsense.", 
+  text("I hope you like it. If you are impatient, click:  \nClick the image to enter my portfolio and see more nonsense.", 
         80, 715);
 
   fill(255, 0);
@@ -95,7 +95,7 @@ void draw (){
   rect(80, 120, 550, 550);
   noStroke();
   fill(r5,g5,b5, 100);
-  rect(420,695, 42,28, 5);
+  rect(420,695, 42,25, 5);
   //rect(80, 120, x, y);
   
 
