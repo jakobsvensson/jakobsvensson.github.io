@@ -37,7 +37,7 @@ PGraphics art;
 void setup (){
 
   size(750,750);
-  
+  smooth();
 
    art = createGraphics (550, 550);
 frameRate(1);
@@ -53,6 +53,7 @@ for (int i = 0; i < 10; i ++){
 }
 
 void draw (){
+  
   int timer = second();
   background(255);
   int s = second();  // Values from 0 - 59
