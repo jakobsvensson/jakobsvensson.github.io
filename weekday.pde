@@ -82,7 +82,7 @@ void draw (){
   text(date, 270, 90);
   fill(0, 0, 0);
   text(countdown, 350, 90);
-  text("I hope you like it. If you are impatient, click 'A'. To save the art, click 'S'. \nClick the image to enter my portfolio and see more nonsense.", 
+  text("I hope you like it. If you are impatient, click 'A'. \nClick the image to enter my portfolio and see more nonsense.", 
         80, 715);
 
   fill(255, 0);
