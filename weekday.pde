@@ -1,3 +1,5 @@
+boolean overButton1 = false;
+boolean overButton2 = false;
 
 int[] numberlistX = new int[10];
 int[] numberlistY = new int[10];
@@ -53,6 +55,8 @@ for (int i = 0; i < 10; i ++){
 }
 
 void draw (){
+
+  
   
   int timer = second();
   background(255);
@@ -82,13 +86,16 @@ void draw (){
   text(date, 270, 90);
   fill(0, 0, 0);
   text(countdown, 350, 90);
-  text("I hope you like it. If you are impatient, click 'A'. \nClick the image to enter my portfolio and see more nonsense.", 
+  text("I hope you like it. If you are impatient, click here. \nClick the image to enter my portfolio and see more nonsense.", 
         80, 715);
 
   fill(255, 0);
   stroke(0);
   strokeWeight(2);
   rect(80, 120, 550, 550);
+  noStroke();
+  fill(r5,g5,b5, 100);
+  rect(420,695, 42,28, 5);
   //rect(80, 120, x, y);
   
 
@@ -212,11 +219,32 @@ void keyPressed() {
      
       art.save("my_art.png");
 } 
-  
-      if ((key == 'a') || (key == 'A')) {
+ 
      
+}
 
-        for (int i = 0; i < 10; i ++){
+
+void checkButtons() {
+  if (mouseX > 80 && mouseX < 630 && mouseY > 120 && mouseY <670) {
+    overButton1 = true;   
+  } else {
+    overButton1 = false;
+  }
+
+      if (mouseX > 420 && mouseX < 462 && mouseY > 695 && mouseY <723) {
+    overButton2 = true;   
+  } else {
+    overButton2 = false;
+  }
+  }
+  
+void mousePressed() {
+  if (overButton1) { 
+    link("https://jakobsvensson.myportfolio.com/");
+  }
+  
+    if (overButton2) { 
+            for (int i = 0; i < 10; i ++){
       x = int(random(0, 550));
       y = int(random(0, 550));
        
@@ -244,6 +272,14 @@ void keyPressed() {
           b5 = random(0,240);
           
           numberOfPoints = int(random(3, 10));
-        }
+  }
+    }
 }
+
+void mouseMoved() { 
+  checkButtons(); 
+}
+  
+void mouseDragged() {
+  checkButtons(); 
 }
