@@ -78,11 +78,11 @@ void draw (){
   fill(0, 0, 0);
   text(predate, 80, 90);
   fill((r5), (g5), (b5));
-  text(date, 280, 90);
+  text(date, 270, 90);
   fill(0, 0, 0);
   text(countdown, 360, 90);
-  text("I hope you like it. \nClick it to enter my portfolio and see more nonsense.", 
-        80, 700);
+  text("I hope you like it. \nClick the image to enter my portfolio and see more nonsense.", 
+        80, 710);
 
   fill(255, 0);
   stroke(0);
