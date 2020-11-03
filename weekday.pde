@@ -82,7 +82,7 @@ void draw (){
   fill(0, 0, 0);
   text(countdown, 350, 90);
   text("I hope you like it. \nClick the image to enter my portfolio and see more nonsense.", 
-        80, 710);
+        80, 715);
 
   fill(255, 0);
   stroke(0);
@@ -130,8 +130,6 @@ void draw (){
 
 void shape1(int[] x, int[] y) {
   
-
-    print(numberOfPoints);
     
     art.beginDraw();
     art.background(r4,g4,b4);
