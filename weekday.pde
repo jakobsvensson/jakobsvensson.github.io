@@ -169,7 +169,7 @@ void shape1(int[] x, int[] y) {
       art.endShape();
     
     art.fill(r2,g2,b2);
-    art.stroke(0);
+    art.stroke(r,g,b);
     art.strokeWeight(2);
     art.ellipse(x[0], y[1], 30, 30);
     
@@ -187,30 +187,6 @@ void shape1(int[] x, int[] y) {
     image(art,80,120);
   
 
-  
-  
-//   t = t + 0.001;
-//float x = noise(t);
-//float y = noise(t);
-//x = map(x, 0,1,0, width);
-//y = map(y, 0,1,0, height);
-//float x2 = noise(t/2);
-//float y2 = noise(t/4);
-//float c1 = noise(t*15);
-//float c2 = noise(t*5);
-//float c3 = noise(t*15);
-//float c4 = noise(t*5);
-//x2 = map(x2, 0,1,0, width);
-//y2 = map(y2, 0,1,0, height);
-//c1 = map(c1, 0,1,0, width);
-//c2 = map(c2, 0,1,0, height);
-//c3 = map(c3, 0,1,0, width);
-//c4 = map(c4, 0,1,0, height);
-  
-  
-//stroke (r,g,b,250);
-//fill(r,g,b,250);
-//bezier(x+sin(x/2)*10, y, c1, c2, c3, c4, x2+sin(x2/2)*10, y2+cos(y2/2)*10);
   
 }
 
