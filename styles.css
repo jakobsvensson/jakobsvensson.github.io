@@ -24,6 +24,9 @@ html, body{
   display: flex;
   justify-content: center;
   align-items: center;
+-fx-focus-color: transparent;
+-fx-faint-focus-color: transparent;
+    outline: none !important;
     
 
     
