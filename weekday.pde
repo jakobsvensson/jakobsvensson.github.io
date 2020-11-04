@@ -3,6 +3,8 @@ boolean overButton2 = false;
 
 int[] numberlistX = new int[10];
 int[] numberlistY = new int[10];
+int[] numberlistX2 = new int[10];
+int[] numberlistY2 = new int[10];
 int numberOfPoints = int(random(3, 10));
 
 float t = 0;
@@ -31,9 +33,10 @@ float b5 =40;
 
 PGraphics art;
 
-      int x = int(random(80, 630));
-      int y = int(random(120, 670));
-  
+      int x = int(random(0, 550));
+      int y = int(random(0, 550));
+      int x2 = int(random(0, 550));
+      int y2 = int(random(0, 550));
 
 
 void setup (){
@@ -47,9 +50,13 @@ frameRate(10);
 for (int i = 0; i < 10; i ++){
       x = int(random(0, 550));
       y = int(random(0, 550));
+      x2 = int(random(0, 550));
+      y2 = int(random(0, 550));
        
          numberlistX[i] = x;
          numberlistY[i] = y;
+         numberlistX2[i] = x2;
+         numberlistY2[i] = y2;
       }
 
 }
@@ -99,15 +106,19 @@ void draw (){
   //rect(80, 120, x, y);
   
 
-  shape1(numberlistX, numberlistY);
+  shape1(numberlistX, numberlistY,numberlistX2, numberlistY2);
 
   if (timer == 0) {
       for (int i = 0; i < 10; i ++){
       x = int(random(0, 550));
       y = int(random(0, 550));
+      x2 = int(random(0, 550));
+      y2 = int(random(0, 550));
        
          numberlistX[i] = x;
          numberlistY[i] = y;
+         numberlistX2[i] = x2;
+         numberlistY2[i] = y2;
          
           r = random(0,40);
           g = random(50,160);
@@ -136,9 +147,9 @@ void draw (){
 
 }
 
-void shape1(int[] x, int[] y) {
+void shape1(int[] x, int[] y,int[] x2, int[] y2) {
   
-    
+
     art.beginDraw();
     art.background(r4,g4,b4);
       
@@ -147,25 +158,38 @@ void shape1(int[] x, int[] y) {
         art.fill(r3,g3,b3);
         art.triangle(x[7],y[7],x[6],y[6],x[8],y[8]);
       }
-      art.fill(r5,g5,b5);
-      art.rect(x[9],y[9],1000,1000);
       
+      
+      if (numberOfPoints > 5){
       art.fill(r3,g3,b3);
       art.triangle(x[1],y[1],x[0],y[0],x[3],y[3]);
-      
+      art.fill(r5,g5,b5);
+      art.rect(x[9],y[9],1000,1000);
+      }
 
       art.beginShape();
       art.fill(r,g,b);
       art.noStroke();
-    for (int i=0; i < x.length; i++) {      //x constrained points
+    for (int i=0; i < numberOfPoints; i++) {      //x constrained points
       
     for (int k=0; k < numberOfPoints; k++){
          art.vertex(x[i],y[i]);
       }
     }
     
-
-
+      art.endShape();
+      
+      art.beginShape();
+      art.fill(r3,g3,b3);
+      art.noStroke();
+      
+    for (int i=0; i < numberOfPoints; i++) {      //x constrained points
+      
+    for (int k=0; k < numberOfPoints; k++){
+         art.vertex(x2[i],y2[i]);
+      }
+    }
+  
       art.endShape();
     
     art.fill(r2,g2,b2);
@@ -223,9 +247,13 @@ void mousePressed() {
             for (int i = 0; i < 10; i ++){
       x = int(random(0, 550));
       y = int(random(0, 550));
+      x2 = int(random(0, 550));
+      y2 = int(random(0, 550));
        
          numberlistX[i] = x;
          numberlistY[i] = y;
+         numberlistX2[i] = x2;
+         numberlistY2[i] = y2;
          
           r = random(0,40);
           g = random(50,160);
@@ -248,6 +276,7 @@ void mousePressed() {
           b5 = random(0,240);
           
           numberOfPoints = int(random(3, 10));
+          
   }
     }
 }
