@@ -15,7 +15,7 @@ float r =30;
 float g =170;
 float b =140;
   
-float r2 =160;
+float r2 =0;
 float g2 =30;
 float b2 =40;
 
@@ -120,25 +120,25 @@ void draw (){
          numberlistX2[i] = x2;
          numberlistY2[i] = y2;
          
-          r = random(0,40);
-          g = random(50,160);
-          b = random(0,120);
+          r = random(60,255);
+          g = random(60,255);
+          b = random(60,255);
           
-          r2 = random(0,40);
-          g2 = random(50,160);
-          b2 = random(0,120);
+          r2 = random(60,255);
+          g2 = random(60,255);
+          b2 = random(60,255);
           
-          r3 = random(0,40);
-          g3 = random(50,160);
-          b3 = random(0,120);
+          r3 = random(60,255);
+          g3 = random(60,255);
+          b3 = random(60,255);
           
-          r4 = random(0,230);
-          g4 = random(20,230);
-          b4 = random(0,240);
+          r4 = random(0,255);
+          g4 = random(20,255);
+          b4 = random(0,255);
 
-          r5 = random(0,230);
-          g5 = random(20,230);
-          b5 = random(0,240);
+          r5 = random(0,255);
+          g5 = random(20,255);
+          b5 = random(0,255);
           
           numberOfPoints = int(random(3, 10));
       }
@@ -183,9 +183,9 @@ void shape1(int[] x, int[] y,int[] x2, int[] y2) {
       art.fill(r3,g3,b3);
       art.noStroke();
       
-    for (int i=0; i < numberOfPoints; i++) {      //x constrained points
+    for (int i=0; i < (numberOfPoints-3); i++) {      //x constrained points
       
-    for (int k=0; k < numberOfPoints; k++){
+    for (int k=0; k < (numberOfPoints-3); k++){
          art.vertex(x2[i],y2[i]);
       }
     }
@@ -255,25 +255,25 @@ void mousePressed() {
          numberlistX2[i] = x2;
          numberlistY2[i] = y2;
          
-          r = random(0,40);
-          g = random(50,160);
-          b = random(0,120);
+          r = random(60,255);
+          g = random(60,255);
+          b = random(60,255);
           
-          r2 = random(0,40);
-          g2 = random(50,160);
-          b2 = random(0,120);
+          r2 = random(60,255);
+          g2 = random(60,255);
+          b2 = random(60,255);
           
-          r3 = random(0,40);
-          g3 = random(50,160);
-          b3 = random(0,120);
+          r3 = random(60,255);
+          g3 = random(60,255);
+          b3 = random(60,255);
           
-          r4 = random(0,230);
-          g4 = random(20,230);
-          b4 = random(0,240);
+          r4 = random(0,255);
+          g4 = random(20,255);
+          b4 = random(0,255);
 
-          r5 = random(0,230);
-          g5 = random(20,230);
-          b5 = random(0,240);
+          r5 = random(0,255);
+          g5 = random(20,255);
+          b5 = random(0,255);
           
           numberOfPoints = int(random(3, 10));
           
